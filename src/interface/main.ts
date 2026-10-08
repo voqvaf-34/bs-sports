@@ -36,6 +36,7 @@ function createActivityCard(activity: Activity): HTMLElement {
   time.textContent = `Horario: ${activity.time}`;
 
   const removeButton = document.createElement("button");
+  removeButton.className = "btn btn-danger";
   removeButton.type = "button";
   removeButton.textContent = "Eliminar";
   // agregar clase
